@@ -69,3 +69,62 @@ body{
     border-radius: 12px;
     font-family: quicksand;
 }
+svg{
+    display: none;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner-content{
+    max-width: 640px;
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #111111;
+}
+#empowering{
+    color: #FEA301;
+}
+#towards-vision{
+    color: #01ACFD;
+}
+.banner-content p{
+    color: #111111;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.banner-content button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #111111;
+    border-radius: 12px;
+    padding: 10px 50px;
+    border: none;
+    font-family: quicksand;
+}
+.banner-img img{
+    max-width: 100%;
+}
+svg{
+    width: 5%;
+}
+@media screen and (max-width:576px) {
+    .navbar ul, button, h2{
+        display: none;
+    }
+    .banner{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
