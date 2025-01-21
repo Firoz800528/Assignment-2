@@ -222,7 +222,10 @@ svg{
     border: none;
     margin-top: 38px;
     background: none;
-
+    cursor: pointer;
+}
+.card1 button:hover{
+    color: #000000;
 }
 .card2 button{
     font-size: 1rem;
@@ -231,7 +234,10 @@ svg{
     border: none;
     margin-top: 38px;
     background: none;
-
+    cursor: pointer;
+}
+.card2 button:hover{
+    color: #000000;
 }
 .card3 button{
     font-size: 1rem;
@@ -240,7 +246,10 @@ svg{
     border: none;
     margin-top: 38px;
     background: none;
-
+    cursor: pointer;
+}
+.card3 button:hover{
+    color: #000000;
 }
 .btn{
     display: flex;
@@ -257,12 +266,15 @@ svg{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    
-   
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #b990487a;
 }
 .arrow i{
     font-size: 25px;
     color: #FFFFFF;
+    
     
     
     
@@ -394,6 +406,75 @@ svg{
 .response{
     display: none;
 }
+#footer{
+    background-color: #01ACFD;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-sec{
+    width: 400px;
+}
+.logo-title{
+    display: flex;
+    align-items: center;
+}
+.logo-title > h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 16px;
+}
+.logo-title > img{
+    border: 1px dotted;
+    border-radius: 30%;
+    background-color: white;
+    width: 82px;
+    height: 82px;
+}
+.logo-content > p{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 400;
+}
+.about-sec > h4{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.about-sec > ul{
+    margin-top: 30px;
+}
+.about-sec > ul > li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.about-sec > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25;
+    font-weight: 500;
+}
+.about-sec > ul > li > a:hover{
+    color: #072e0a;
+}
+.social-sec > h4{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.social-bar{
+    margin-top: 30px;
+
+}
+.social-bar > a > img{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
 @media screen and (max-width:576px) {
     .navbar{
         border-bottom: 1px solid #FEA301;
@@ -449,5 +530,10 @@ svg{
     
     .response{
         display: inline-block;
+    }
+    #footer{
+        flex-direction: column;
+        gap:40px;
+        padding-left: 20px;
     }
 }
