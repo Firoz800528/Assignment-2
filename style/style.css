@@ -527,6 +527,7 @@ svg{
     }
     .stories-content > button{
         width: 20vw;
+        padding: 0px;
         font-size: 2vw;
     }
     
