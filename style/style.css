@@ -8,7 +8,7 @@
 }
 
 body{
-    max-width: 80vw;
+    max-width: 100vw;
     margin: 0 auto;
     background-color: #F7F7F7;
     font-family: quicksand;
@@ -19,6 +19,8 @@ body{
     align-items: center;
     padding-top: 18px;
     padding-bottom: 18px;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 .logo{
     display: flex;
@@ -94,6 +96,8 @@ svg{
     display: none;
 }
 .banner{
+    max-width: 80vw;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,10 +146,12 @@ svg{
     max-width: 100%;
 }
 .classes{
+    max-width: 80vw;
+    margin: 0 auto;
     background-image: url(../assets/bg.png);
     background-size: 100%;
 }
-.classes h2{
+.classes h2, .stories-heading{
     font-size: 2.9rem;
     font-weight: 700;
     color: #000000;
@@ -241,8 +247,8 @@ svg{
     align-items: center;
     gap: 10px;
     border: none;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 .btn button{
     border: none;
@@ -260,7 +266,113 @@ svg{
     
     
 }
+.stories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: url(../assets/bg.png),linear-gradient(0deg, #fda9015d,#f7f7f75b);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stories-card-sec{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.stories-card1{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #FFFFFF;
 
+
+}
+.stories-card1 > img{
+    border-radius: 16px 16px 0px 0px;
+}
+.stories-content{
+    padding: 20px;
+    margin-top: -41px;
+}
+.stories-content > h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 52px;
+
+}
+.stories-content > h5{
+    font-size: 0.9rem;
+    margin-top: 23px;
+    
+    
+
+}
+.stories-content > p{
+    font-family: raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+}
+.stories-content > button{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: raleway;
+    color: #FFFFFF;
+    width: 170px;
+    border: none;
+    border-radius: 48px;
+    padding: 12px;
+    background-color: #3CD8E8;
+    
+}
+.small-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    gap: 20px;
+}
+.stories-card2 > img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.stories-card3 > img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.stories-card4 > img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.stories-card5 > img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+.bg-color-radius{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+.stories > button{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: 10px;
+    width: 195px;
+    font-family: quicksand;
+    border: none;
+    border-radius: 12px;
+    margin-top: 78px;
+    margin-bottom: 50px;
+}
+.stories > button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 @media screen and (max-width:576px) {
     .navbar{
         border-bottom: 1px solid #FEA301;
@@ -278,6 +390,8 @@ svg{
     }
     #menu-icon{
         display: inline;
+        font-size: 30px;
+
     }
     .banner{
         margin: 0 auto;
@@ -288,9 +402,14 @@ svg{
     .banner-content h1{
         font-size: 2.5rem;
     }
+    .classes{
+        max-width: 70vw;
+    }
     .card-sec{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
+
 
 }
