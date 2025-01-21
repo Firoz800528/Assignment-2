@@ -190,6 +190,7 @@ svg{
 
 .card3{
     padding: 40px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +200,7 @@ svg{
     background: linear-gradient(180deg, #EEE1FF, #FFFFFF);
     }
 
-.card1 img, .card2 img, .card3 img{
+.card1 > img, .card2 > img, .card3 img{
     width: 100px;
 }
 .card1 h4, .card2 h4, .card3 h4{
@@ -295,7 +296,7 @@ svg{
 }
 .stories-content{
     padding: 20px;
-    margin-top: -41px;
+    margin-top: -44px;
 }
 .stories-content > h4{
     font-size: 1.5rem;
@@ -318,14 +319,14 @@ svg{
     color: #666666;
 }
 .stories-content > button{
-    font-size: 1rem;
+    font-size: 1vw;
     font-weight: 500;
     font-family: raleway;
     color: #FFFFFF;
-    width: 170px;
+    width: 13vw;
     border: none;
     border-radius: 48px;
-    padding: 12px;
+    padding: 1vw;
     background-color: #3CD8E8;
     
 }
@@ -335,6 +336,19 @@ svg{
     width: 500px;
     gap: 20px;
 }
+.stories-card2 .stories-content  > button{
+    background-color: #859448;
+}
+.stories-card3 .stories-content  > button{
+    background-color: #323161;
+}
+.stories-card4 .stories-content > button{
+    background-color: #3f326d;
+}
+.stories-card5 .stories-content > button{
+    background-color: #7a5d2b;
+}
+
 .stories-card2 > img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
@@ -373,9 +387,15 @@ svg{
     color: black;
     cursor: pointer;
 }
+.response{
+    display: none;
+}
 @media screen and (max-width:576px) {
     .navbar{
         border-bottom: 1px solid #FEA301;
+        max-width: 100vw;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 
     .navbar h2{
@@ -403,13 +423,34 @@ svg{
         font-size: 2.5rem;
     }
     .classes{
-        max-width: 70vw;
+        max-width: 90vw;
     }
     .card-sec{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-
+    .big-card{
+        display: none;
+    }
+    .small-card{
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .stories-card-sec{
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stories-content{
+        margin-top: -39px;
+    }
+    
+    .response{
+        display: inline-block;
+    }
 }
