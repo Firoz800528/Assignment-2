@@ -272,10 +272,13 @@ svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background: url(../assets/bg.png),linear-gradient(0deg, #fda9015d,#f7f7f75b);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.stories-sec{
+    max-width: 80vw;
 }
 .stories-card-sec{
     display: flex;
@@ -292,6 +295,7 @@ svg{
 
 }
 .stories-card1 > img{
+    width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
 .stories-content{
