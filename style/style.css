@@ -525,6 +525,10 @@ svg{
     .stories-content{
         margin-top: -39px;
     }
+    .stories-content > button{
+        width: 20vw;
+        font-size: 2vw;
+    }
     
     .response{
         display: inline-block;
