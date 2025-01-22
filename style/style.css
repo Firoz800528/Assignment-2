@@ -15,8 +15,7 @@ body{
 }
 marquee{
     max-width: 80vw;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     color: #808080;
     font-size: 1.25rem;
@@ -296,8 +295,7 @@ svg{
     align-items: center;
     /* margin: 0 auto; */
     background: url(../assets/bg.png),linear-gradient(0deg, #fda9015d,#f7f7f75b);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: 80%;
 }
 .stories-sec{
     max-width: 80vw;
