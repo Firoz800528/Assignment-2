@@ -13,6 +13,16 @@ body{
     background-color: #F7F7F7;
     font-family: quicksand;
 }
+marquee{
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    color: #808080;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -507,6 +517,9 @@ svg{
     }
     .classes{
         max-width: 90vw;
+    }
+    .btn{
+        display: none;
     }
     .card-sec{
         flex-direction: column;
